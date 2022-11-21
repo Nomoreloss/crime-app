@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-button (click)="goBack()">
+          <ion-icon name="arrow-back-outline" color="light" ></ion-icon>
+         </ion-button>
+        </ion-buttons>
+    <ion-title>
+      Support
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button >
+        <ion-icon slot="icon-only" ios="menu" md="menu" class="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="support-logo">
+    <img src="/assets/IMAP-images/logo.svg" alt="Ionic Logo">
+  </div>
+
+  <form #submitForm="ngForm" novalidate (ngSubmit)="submit(submitForm)">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label position="stacked" color="primary">Enter your support message below</ion-label>
+        <ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-text color="danger">
+      <p [hidden]="supportQuestion.valid || submitted === false" class="ion-padding-start">
+        Support message is required
+      </p>
+    </ion-text>
+
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit">Submit</ion-button>
+    </div>
+  </form>
+</ion-content>

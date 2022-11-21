@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentActionSheet()" >
+        <ion-icon slot="icon-only" ios="menu" md="menu" class="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card  *ngFor="let report of reports">
+    <ion-card-content>
+      <ion-list >
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img [src]="report.img">
+          </ion-thumbnail>
+         <div>
+          <h2>{{report.title}}</h2>
+          
+          <p>{{report?.desc}}</p>
+         </div>
+          <ion-label slot="end" >{{report.date}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+
+
+
+</ion-content>
+
+
+

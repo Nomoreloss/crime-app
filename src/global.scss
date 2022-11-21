@@ -1,0 +1,173 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+/*
+ * App CSS
+ * ----------------------------------------------------------------------------
+ * Imports a file that can contain Sass/CSS that should be used throughout
+ * the entire app.
+ */
+
+@import "./app/app.scss";
+
+@import '~swiper/scss';
+@import '~@ionic/angular/css/ionic-swiper';
+
+// placed here instead of tutorial.scss due to slide els not getting ng scoping attribute
+.swiper-slide {
+  display: block;
+}
+
+.action-sheet-group.sc-ion-action-sheet-md  {
+  border-top-left-radius: 30px!important;
+  border-top-right-radius: 30px!important;
+
+}
+
+.alert-button-group.sc-ion-alert-md {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.action-sheet-icon.sc-ion-action-sheet-md {
+  margin-right:10px!important;
+}
+
+
+.alert-button.ion-focusable.ion-activatable.alert-button-role-cancel.sc-ion-alert-md {
+  width: 97px;
+  height: 39px;
+ text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #777777;
+  border-radius: 4px;
+}
+
+.alert-button.ion-focusable.ion-activatable.alert-button-role-agree.sc-ion-alert-md {
+  width: 122px;
+height: 39px;
+background: #309CFF;
+border-radius: 4px;
+color:#fff;
+}
+
+.alert-button-inner.sc-ion-alert-md {
+  justify-content: center;
+}
+
+// .alert-head.sc-ion-alert-md {
+ 
+//   min-height:5rem;
+//   color:green!important;
+// }
+.alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+ 
+}
+
+.alert-message.sc-ion-alert-md {
+  text-align:center;
+}
+
+.menu {
+  width: 38px;
+height: 28px;
+color: #309CFF;
+}
+
+.input-wrapper {
+  display: flex!important;
+  justify-content: center!important;
+}
+
+.native-input.sc-ion-input-md,
+.native-textarea.sc-ion-textarea-md {
+  padding-left:10px!important;
+}
+
+.dark-theme.ios {
+  --ion-background-color: #000000;
+  --ion-background-color-rgb: 0,0,0;
+
+  --ion-text-color: #ffffff;
+  --ion-text-color-rgb: 255,255,255;
+
+  --ion-color-step-50: #0d0d0d;
+  --ion-color-step-100: #1a1a1a;
+  --ion-color-step-150: #262626;
+  --ion-color-step-200: #333333;
+  --ion-color-step-250: #404040;
+  --ion-color-step-300: #4d4d4d;
+  --ion-color-step-350: #595959;
+  --ion-color-step-400: #666666;
+  --ion-color-step-450: #737373;
+  --ion-color-step-500: #808080;
+  --ion-color-step-550: #8c8c8c;
+  --ion-color-step-600: #999999;
+  --ion-color-step-650: #a6a6a6;
+  --ion-color-step-700: #b3b3b3;
+  --ion-color-step-750: #bfbfbf;
+  --ion-color-step-800: #cccccc;
+  --ion-color-step-850: #d9d9d9;
+  --ion-color-step-900: #e6e6e6;
+  --ion-color-step-950: #f2f2f2;
+
+  --ion-toolbar-background: #0d0d0d;
+
+  --ion-item-background: #000000;
+}
+.about-info {
+  width:100%!important;
+}
+
+
+ion-modal {
+  --height: 40%;
+  --width:90%;
+  margin:auto;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal::part(backdrop) {
+  background: rgba(0, 102, 255, 0.973);
+  opacity: 1;
+}
+
+ion-modal ion-toolbar {
+  --background: rgb(125, 22, 209);
+  --color: white;
+}
+
+ion-modal.stack-modal {
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --backdrop-opacity: var(--ion-backdrop-opacity, 0.32);
+}
+
+#ion-footer {
+  border-radius:20px;
+}

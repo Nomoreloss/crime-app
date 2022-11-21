@@ -1,0 +1,80 @@
+
+
+<ion-content>
+  <div class="title">
+    <img src="assets/IMAP-images/logo.svg" class="login-image" />
+    
+  </div>
+      <p class="head-title"> Create New Account</p>
+
+  <form [formGroup]="signupForm" (submit)="create()">
+    <ion-list>
+      <ion-item class="input">
+        <ion-label position="stacked" color="primary">Full Name</ion-label>
+        <ion-input formControlName="fullName" type="text" >
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p  class="error" *ngIf="isFieldValid('fullName')">
+          Full Name is required
+        </p>
+      </ion-text>
+      <ion-item class="input">
+        <ion-label position="stacked" color="primary">Email</ion-label>
+        <ion-input formControlName="email" type="text" >
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p  class="error" *ngIf="isFieldValid('email')">
+          Email is required
+        </p>
+      </ion-text>
+      <ion-item class="input">
+        <ion-label position="stacked" color="primary">Phone Number</ion-label>
+        <ion-input formControlName="phoneNumber" type="text" >
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p  class="error" *ngIf="isFieldValid('phoneNumber')">
+          Phone Number is required
+        </p>
+      </ion-text>
+
+      <ion-item class="input">
+        <ion-label position="stacked" color="primary">Password</ion-label>
+        <ion-input formControlName="password" type="password" >
+        </ion-input>
+      </ion-item>
+
+      <ion-text color="danger">
+        <p  class="error" *ngIf="isFieldValid('password')">
+          Password is required
+        </p>
+      </ion-text>
+    </ion-list>
+    <ion-item  class="forgot">
+      <div class="arange">
+        <ion-checkbox ></ion-checkbox>
+        <ion-label>I agree to terms & condition</ion-label>
+        </div>
+       
+      
+    </ion-item>
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button  type="submit" expand="block" shape="round">CREATE ACCOUNT</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="account" style="text-align:center;">
+        Already have an account? <a routerLink="/login">Login Here</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </form>
+
+</ion-content>

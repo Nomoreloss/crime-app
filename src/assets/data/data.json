@@ -1,0 +1,58 @@
+[
+  
+  {
+    "id":"1",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  },
+  {
+    "id":"2",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  },
+  {
+    "id":"3",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  },
+  {
+    "id":"4",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  },
+  {
+    "id":"5",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  },
+  {
+    "id":"6",
+    "title": "Report Title",
+    "dateCreated": "03,Oct, 2022",
+    "complaintDetail": "Wait a minute. Wait a minute.",
+    "location": "Nigeria",
+    "complaintType": "Stealing",
+    "status": "pending"
+  }
+    
+  ]
